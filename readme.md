@@ -8,8 +8,8 @@ using pip, and importing libraries.
 
 ## Tutorial
 Pyventure handles the game logic; all the user needs to do is
-create `Place` objects. Each `Place` object represents a node
-on the game map. It is a setting which includes things with 
+create `Place` objects. Each `Place` object represents a location
+on the game map. It is the game space which includes things with 
 which the player can interact.
 
 A `Place` object is created by providing four parameters:
@@ -23,6 +23,7 @@ A `Place` object is created by providing four parameters:
 from pyventure.place import Place, Feature, Node
 from pyventure.items import Clue, Consumable, Tool
 from pyventure.game_loops import start
+from pyventure.message import msg
 
 LIVING_ROOM = 'Living Room'
 KITCHEN = 'Kitchen'
@@ -75,6 +76,7 @@ all_places = {
 
 
 if __name__ == '__main__':
+    msg.narrate('Welcome to a Simple Game')
     start(new_game_msg='Name your character: ', all_places=all_places)
 
 ```
