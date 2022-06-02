@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyventure"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple framework for creating text adventure games."
 authors = ["David Flood <davidfloodii@gmail.com>"]
 license = "MIT"
