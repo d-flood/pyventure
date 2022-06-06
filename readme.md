@@ -1,5 +1,5 @@
 # Pyventure is a simple library for creating a text adventure with Python
-I created this library with and for my son for him practice coding,
+I created this library with and for my son for him to practice coding,
 using pip, and importing libraries.
 
 
